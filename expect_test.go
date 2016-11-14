@@ -2,7 +2,7 @@ package expect_test
 
 import (
     "testing"
-    "../src"
+    "github.com/wambosa/expect"
 )
 
 
