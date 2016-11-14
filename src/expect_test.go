@@ -2,7 +2,7 @@ package expect_test
 
 import (
     "testing"
-    "expect"
+    "../src"
 )
 
 
