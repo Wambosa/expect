@@ -142,9 +142,9 @@ func Test_ToBe_when_given_nil_then_compares_correctly(t *testing.T){
         Value: nil,
     }
     
-    if !expecting.ToBe(nil) {t.Error("The TestCase.Value is not converting properly. The problem may be with expect.toString")}
-    if !expecting.ToBe("") {t.Error("The TestCase.Value is not converting properly. The problem may be with expect.toString")}
-    if !expecting.ToBe(0) {t.Error("The TestCase.Value is not converting properly. The problem may be with expect.toString")}    
+    if !expecting.ToBe(nil) {t.Error("The TestCase.Value is not converting nil properly. The problem may be with expect.toString")}
+    if !expecting.ToBe("") {t.Error("The TestCase.Value is not converting String.Empty properly. The problem may be with expect.toString")}
+    if !expecting.ToBe(0) {t.Error("The TestCase.Value is not converting zero properly. The problem may be with expect.toString")}    
 }
 
 func Test_ToBe_when_given_a_number_then_compares_correctly(t *testing.T){
