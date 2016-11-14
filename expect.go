@@ -7,7 +7,7 @@ import (
 
 type TestCase struct {
     T *testing.T
-    Value interface{}
+    Value interface{} //todo: unfurl if func and generic error if there is a problem
     Map map[string]interface{}
 }
 

@@ -137,6 +137,32 @@ func Test_Truthy_when_given_a_number_zero_then_fails_test(t * testing.T){
     }
 }
 
+func Test_Truthy_when_given_a_empty_slice_then_fails_test(t * testing.T){
+    
+    t.Skip()
+    
+    expecting := expect.TestCase{
+        Value: []int{},
+    }
+    
+    if expecting.Truthy() != false {
+        t.Error("TestCase.Truthy should return FALSE when given an empty slice")
+    }
+}
+
+func Test_Truthy_when_given_a_empty_map_then_fails_test(t * testing.T){
+    
+    t.Skip()
+    
+    expecting := expect.TestCase{
+        Value: map[int]int{},
+    }
+    
+    if expecting.Truthy() != false {
+        t.Error("TestCase.Truthy should return FALSE when given an empty map")
+    }
+}
+
 func Test_ToBe_when_given_nil_then_compares_correctly(t *testing.T){
     expecting := expect.TestCase{
         Value: nil,
